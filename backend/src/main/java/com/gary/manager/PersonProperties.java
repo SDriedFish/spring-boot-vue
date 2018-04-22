@@ -1,6 +1,7 @@
 package com.gary.manager;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Component;
 /**
  * Created with IntelliJ IDEA.

@@ -23,7 +23,7 @@ public class HelloController {
 
     @RequestMapping(value = "/hello/{id}", method = RequestMethod.GET)
     public String sayHello(@PathVariable("id") Integer id) {
-        return "Hello Spring Boot and port is " + port + ".My name is " + personProperties.getName() + ":" + id;
+        return "你好 Spring Boot and port is " + port + ".My name is " + personProperties.getName() + ":" + id;
     }
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)

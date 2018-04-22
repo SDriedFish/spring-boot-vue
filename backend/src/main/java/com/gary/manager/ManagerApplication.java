@@ -2,6 +2,9 @@ package com.gary.manager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
 /**
  * Created with IntelliJ IDEA.
  * @author: Administrator
@@ -9,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Time: 23:16
  */
 @SpringBootApplication
-public class ManagerApplication {
+public class ManagerApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(ManagerApplication.class, args);

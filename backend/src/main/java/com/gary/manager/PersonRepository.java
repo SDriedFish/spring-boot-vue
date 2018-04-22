@@ -12,5 +12,5 @@ import java.util.List;
  * Time: 23:39
  */
 public interface PersonRepository extends JpaRepository<Person, Integer> {
-    public List<Person> findByAge(Integer age);
+    List<Person> findByAge(Integer age);
 }
