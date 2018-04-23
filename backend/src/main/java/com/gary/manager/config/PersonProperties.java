@@ -1,4 +1,4 @@
-package com.gary.manager;
+package com.gary.manager.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.ImportResource;

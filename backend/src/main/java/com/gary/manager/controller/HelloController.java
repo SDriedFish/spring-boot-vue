@@ -1,6 +1,6 @@
 package com.gary.manager.controller;
 
-import com.gary.manager.PersonProperties;
+import com.gary.manager.config.PersonProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +20,11 @@ public class HelloController {
 
     @Autowired
     private PersonProperties personProperties;
+
+    @GetMapping("cn")
+    public String getCn() {
+        return "中国早安";
+    }
 
     @RequestMapping(value = "/hello/{id}", method = RequestMethod.GET)
     public String sayHello(@PathVariable("id") Integer id) {

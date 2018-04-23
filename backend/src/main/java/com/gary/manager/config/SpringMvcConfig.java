@@ -1,4 +1,4 @@
-package com.gary.manager;
+package com.gary.manager.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -41,5 +41,11 @@ public class SpringMvcConfig implements WebMvcConfigurer {
             }
         };
         registry.addInterceptor(handlerInterceptor).addPathPatterns("/**");
+    }
+
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        StringHttpMessageConverter converter = new StringHttpMessageConverter(Charset.forName("ISO-8859-1"));
+        converters.add(converter);
     }
 }
