@@ -14,6 +14,13 @@ import java.util.List;
  */
 public interface PersonRepository extends JpaRepository<Person, Integer> {
 
+    /**
+    * findByAge
+    * @author Administrator
+    * @param age
+    * @date 2018/5/3 23:36
+    * @return java.util.List<com.gary.manager.bean.Person>
+    */
     List<Person> findByAge(Integer age);
 
 //    @Query("select * from person t where t.name = ?1")
